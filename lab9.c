@@ -11,12 +11,15 @@ struct RecordType
 // Fill out this structure
 struct HashType
 {
-
+  int size;
+    struct RecordType** table;
+    struct Node* head;
 };
 
 // Compute the hash function
 int hash(int x)
 {
+    return x % 10;
 
 }
 
